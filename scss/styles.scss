@@ -1,0 +1,112 @@
+:root {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$title-font:  'Dancing Script', cursive;
+$body-font: 'Raleway', sans-serif;
+$dark-teal: #346e7c;
+$light-teal: #a9c0c7;
+$charcoal: #1a1a1a;
+$light-plum: #d790d5;
+$dark-plum: #962f9a;
+
+.main-body{
+    max-width: 1440px;
+}
+
+#header-img {
+    float: left;
+}
+
+.nav-bar {
+    color: $dark-teal;
+    width: 100%;
+    background-color: $light-teal;
+    border-bottom: 3px solid $dark-teal;
+    position: fixed;
+}
+
+.menu-text {
+    font-family: $body-font;
+    font-size: 1.5em;
+    float:left;
+    padding: 0.9em 7em 0.25em 1em;
+}
+.menu-text:hover {
+    text-decoration: underline;
+    text-decoration-color: $dark-plum;
+    color: $dark-plum;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid $light-teal;
+    border-bottom: 3px solid $light-plum;
+}
+
+p {
+    font-family: $body-font;
+    color: $charcoal;
+    font-size: 1.15em;
+    line-height: 1.55em;
+}
+
+.subsection-title {
+    font-family: $title-font;
+    color: $dark-teal;
+}
+
+h1 {
+    font-family: $title-font;
+    color: $charcoal;
+}
+
+.myButton {
+background-color:#b43aba;
+border-radius:4px;
+border:1px solid #962f9a;
+display:inline-block;
+color:#ffffff;
+font-family: $title-font;
+font-size: 2em;
+padding:10px 30px;
+text-decoration:none;
+text-shadow:0px 1px 0px $charcoal;
+}
+
+.form-item {
+    font-family: $body-font;
+    color: $charcoal;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item input[type="number"],
+.form-item select  {
+    padding: 8px 12px;
+    border-radius: 3px;
+    border: solid 1px #c0c0c0;
+}
+
+.form-item textarea {
+    width: 400px;
+    height: 80px;
+    border-radius: 3px;
+    border: solid 1px #c0c0c0;
+}
+
+.splash-img {
+    height: auto;
+    width: 90%;
+}
+
+.splash-text{
+    margin: 1.5em 5em 1em 5em;
+    text-align: center;
+}
