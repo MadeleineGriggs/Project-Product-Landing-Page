@@ -11,15 +11,15 @@
 <body>
     <header id="header">
         <nav class="nav-bar">
-            <div><img id="header-img" src="images/logo.jpg" alt="Sweet Ingenuity Logo"></div>
-            <div class= "menu-text">Shop</div>
-            <div class= "menu-text">Commissions</div>
-            <div class= "menu-text">Contact</div>
+            <div><a href="#top-menu-id"><img id="header-img" src="images/logo.jpg" alt="Sweet Ingenuity Logo"></a></div>
+            <div class= "menu-text"><a href="#shop-menu-id">Shop</a></div>
+            <div class= "menu-text"><a href="#commissions-menu-id">Commissions</a></div>
+            <div class= "menu-text"><a href="#contact-menu-id">Contact</a></div>
         </nav>
     </header>
 
 <div class="main-body">
-    <div class="top-section">
+    <div class="top-section" id="top-menu-id">
         <img class="splash-img" src="images/commission-img.jpg" alt="An illustration of a group of dragons playing dnd">
         <p class="splash-text">
             Heya!
@@ -31,50 +31,63 @@
         </p>
     </div>
 
-    <div class="shop-section">
+    <div class="shop-section" id="shop-menu-id">
         <hr>
         <h1>Shop</h1>
         <div class="shop-subsection">
             <h2 class="subsection-title">Greeting Cards</h2>
-            <img class="greeting-card" src="images/card-1.jpg" alt="A nerdy greeting card.">
-            <img class="greeting-card" src="images/card-2.jpg" alt="A nerdy greeting card.">
-            <img class="greeting-card" src="images/card-3.jpg" alt="A nerdy greeting card.">
-            <p>
+            <div class="shop-img-container">
+                <img class="greeting-card" src="images/card-1.jpg" alt="A nerdy greeting card.">
+                <img class="greeting-card" src="images/card-2.jpg" alt="A nerdy greeting card.">
+                <img class="greeting-card" src="images/card-3.jpg" alt="A nerdy greeting card.">
+            </div>
+            <p class="shop-text">
                 Professionally printed using my own art and designs, Sweet Ingenuity cards are then cut and folded by hand.
                 Each one measure approximately 4.75 inches by 4.75 inches, with some minor variation due to their handmade nature.
                 They're printed on sturdy cardstock, and are blank inside. The back features my logo and website, and the text "handmade in Ottawa,
                 Canada by a real live human". Each card comes with a simple 5 inch by 5 inch ungummed white envelope.
             </p>
-            <a href="#" class="myButton">Shop Here!</a>
+            <p class="shop-text">
+                <a href="#" class="myButton">Shop Here!</a>
+            </p>
             <hr>
         </div>
         <div class="shop-subsection">
             <h2 class="subsection-title">Art Prints</h2>
-            <img class="art-print" src="images/artprint-1.jpg" alt="A nerdy art print.">
-            <img class="art-print" src="images/artprint-2.jpg" alt="A nerdy art print.">
-            <img class="art-print" src="images/artprint-3.jpg" alt="A nerdy art print.">
-            <p>
+            <div class="shop-img-container">
+                <img class="art-print" src="images/artprint-1.jpg" alt="A nerdy art print.">
+                <img class="art-print" src="images/artprint-2.jpg" alt="A nerdy art print.">
+                <img class="art-print" src="images/artprint-3.jpg" alt="A nerdy art print.">
+            </div>
+            <p class="shop-text">
                 This print measures approximately 8.5 x 11 inches, and is printed on a bright and heavy gloss paper for durability and bright colours.
                 It's sturdy enough to last well if cared for, but is not considered archival. Some prints have tiny dots of misplaced ink or other small
                 glitches, a normal part of the printing process.
             </p>
-            <a href="#" class="myButton">Shop Here!</a>
+            <p class="shop-text">
+                <a href="#" class="myButton">Shop Here!</a>
+            </p>
             <hr>
         </div>
         <div class="shop-subsection">
             <h2 class="subsection-title">Printables</h2>
-            <img class="printable-img" src="images/printable-1.png" alt="A nerdy printable image.">
-            <img class="printable-img" src="images/printable-2.png" alt="A nerdy printable image.">
-            <img class="printable-img" src="images/printable-3.jpg" alt="A nerdy printable image.">
-            <p>
+            <div class="shop-img-container">
+                <img class="printable-img" src="images/printable-1.png" alt="A nerdy printable image.">
+                <img class="printable-img" src="images/printable-2.png" alt="A nerdy printable image.">
+                <img class="printable-img" src="images/printable-3.jpg" alt="A nerdy printable image.">
+            </div>
+            <p class="shop-text">
                 I’ve now got all four of these listed in my shop’s printables section, for maximum cheesy nerdy Valentine’s goodness.
                  Each file is $2 CAD (so like $1.60 US ATM) and you can make as many as you want with your own home printer :)
             </p>
-            <a href="#" class="myButton">Shop Here!</a>
+            <p class="shop-text">
+                <a href="#" class="myButton">Shop Here!</a>
+            </p>
+
         </div>
     </div>
 
-    <div class="commissions-section">
+    <div class="commissions-section" id="commissions-menu-id">
         <hr>
         <h1>Commissions</h1>
         <img class="commissions-img" src="images/splash-img.png" alt="An example of a commissioned art piece.">
@@ -86,7 +99,7 @@
         <a href="#" class="myButton">Contact Me</a>
     </div>
 
-    <div class="contact-section">
+    <div class="contact-section" id="contact-menu-id">
         <hr>
         <h1>Contact Me</h1>
             <img class="social-media-img" src="http://via.placeholder.com/150x150" alt="A link to my social media page.">

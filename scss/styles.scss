@@ -18,36 +18,41 @@ $dark-plum: #962f9a;
 
 .main-body{
     max-width: 1440px;
+    margin: 0 auto;
 }
 
+/* Navigation Styling */
 #header-img {
     float: left;
 }
 
 .nav-bar {
-    color: $dark-teal;
     width: 100%;
     background-color: $light-teal;
     border-bottom: 3px solid $dark-teal;
     position: fixed;
 }
 
-.menu-text {
+.menu-text a {
     font-family: $body-font;
     font-size: 1.5em;
     float:left;
     padding: 0.9em 7em 0.25em 1em;
+    color: $dark-teal;
 }
-.menu-text:hover {
+.menu-text:hover a {
     text-decoration: underline;
     text-decoration-color: $dark-plum;
     color: $dark-plum;
 }
 
+/* Navigation Styling Ends */
+
 hr {
     border: 0;
     border-top: 1px solid $light-teal;
     border-bottom: 3px solid $light-plum;
+    width: 90%;
 }
 
 p {
@@ -59,15 +64,21 @@ p {
 
 .subsection-title {
     font-family: $title-font;
+    font-size: 2em;
     color: $dark-teal;
+    margin: 2em 1em 1.25em 1em;
 }
 
 h1 {
     font-family: $title-font;
+    font-size: 3em;
     color: $charcoal;
+    text-align: center;
+    margin-top: 1.5em;
 }
 
 .myButton {
+margin: 1em 1em 1em 1em;
 background-color:#b43aba;
 border-radius:4px;
 border:1px solid #962f9a;
@@ -76,10 +87,12 @@ color:#ffffff;
 font-family: $title-font;
 font-size: 2em;
 padding:10px 30px;
-text-decoration:none;
+text-decoration: none;
 text-shadow:0px 1px 0px $charcoal;
+text-align: center;
 }
 
+/* Form Styling */
 .form-item {
     font-family: $body-font;
     color: $charcoal;
@@ -101,12 +114,47 @@ text-shadow:0px 1px 0px $charcoal;
     border: solid 1px #c0c0c0;
 }
 
+/* Form Styling Ends */
+
 .splash-img {
     height: auto;
     width: 90%;
+    margin-top: 4.7em;
+}
+
+%center-text {
+    margin: 1.5em 5em 1em 5em;
+    text-align: center;
 }
 
 .splash-text{
-    margin: 1.5em 5em 1em 5em;
-    text-align: center;
+    @extend %center-text;
+}
+
+.shop-text {
+    @extend %center-text;
+}
+
+.shop-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0em 2em 0em 2em;
+}
+
+%contain-img {
+    width: 100%;
+    height: auto;
+}
+
+.greeting-card {
+    @extend %contain-img;
+}
+
+.art-print {
+    @extend %contain-img;
+}
+
+.printable {
+    @extend %contain-img;
 }

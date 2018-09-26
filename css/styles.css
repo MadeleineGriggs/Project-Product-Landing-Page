@@ -4,33 +4,37 @@
   box-sizing: border-box; }
 
 .main-body {
-  max-width: 1440px; }
+  max-width: 1440px;
+  margin: 0 auto; }
 
+/* Navigation Styling */
 #header-img {
   float: left; }
 
 .nav-bar {
-  color: #346e7c;
   width: 100%;
   background-color: #a9c0c7;
   border-bottom: 3px solid #346e7c;
   position: fixed; }
 
-.menu-text {
+.menu-text a {
   font-family: "Raleway", sans-serif;
   font-size: 1.5em;
   float: left;
-  padding: 0.9em 7em 0.25em 1em; }
+  padding: 0.9em 7em 0.25em 1em;
+  color: #346e7c; }
 
-.menu-text:hover {
+.menu-text:hover a {
   text-decoration: underline;
   text-decoration-color: #962f9a;
   color: #962f9a; }
 
+/* Navigation Styling Ends */
 hr {
   border: 0;
   border-top: 1px solid #a9c0c7;
-  border-bottom: 3px solid #d790d5; }
+  border-bottom: 3px solid #d790d5;
+  width: 90%; }
 
 p {
   font-family: "Raleway", sans-serif;
@@ -40,13 +44,19 @@ p {
 
 .subsection-title {
   font-family: "Dancing Script", cursive;
-  color: #346e7c; }
+  font-size: 2em;
+  color: #346e7c;
+  margin: 2em 1em 1.25em 1em; }
 
 h1 {
   font-family: "Dancing Script", cursive;
-  color: #1a1a1a; }
+  font-size: 3em;
+  color: #1a1a1a;
+  text-align: center;
+  margin-top: 1.5em; }
 
 .myButton {
+  margin: 1em 1em 1em 1em;
   background-color: #b43aba;
   border-radius: 4px;
   border: 1px solid #962f9a;
@@ -56,8 +66,10 @@ h1 {
   font-size: 2em;
   padding: 10px 30px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #1a1a1a; }
+  text-shadow: 0px 1px 0px #1a1a1a;
+  text-align: center; }
 
+/* Form Styling */
 .form-item {
   font-family: "Raleway", sans-serif;
   color: #1a1a1a; }
@@ -76,10 +88,22 @@ h1 {
   border-radius: 3px;
   border: solid 1px #c0c0c0; }
 
+/* Form Styling Ends */
 .splash-img {
   height: auto;
-  width: 90%; }
+  width: 90%;
+  margin-top: 4.7em; }
 
-.splash-text {
+.splash-text, .shop-text {
   margin: 1.5em 5em 1em 5em;
   text-align: center; }
+
+.shop-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 0em 2em 0em 2em; }
+
+.greeting-card, .art-print, .printable {
+  width: 100%;
+  height: auto; }
