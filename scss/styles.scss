@@ -11,10 +11,11 @@
 $title-font:  'Dancing Script', cursive;
 $body-font: 'Raleway', sans-serif;
 $dark-teal: #346e7c;
-$light-teal: #a9c0c7;
+$light-teal: #a9d6db;
 $charcoal: #1a1a1a;
 $light-plum: #d790d5;
 $dark-plum: #962f9a;
+
 
 .main-body{
     max-width: 1440px;
@@ -37,7 +38,7 @@ $dark-plum: #962f9a;
     font-family: $body-font;
     font-size: 1.5em;
     float:left;
-    padding: 0.9em 7em 0.25em 1em;
+    padding: 0.9em 9em 0.25em 6em;
     color: $dark-teal;
 }
 .menu-text:hover a {
@@ -50,9 +51,10 @@ $dark-plum: #962f9a;
 
 hr {
     border: 0;
-    border-top: 1px solid $light-teal;
+    border-top: 2px solid $light-teal;
     border-bottom: 3px solid $light-plum;
-    width: 90%;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 p {
@@ -74,7 +76,7 @@ h1 {
     font-size: 3em;
     color: $charcoal;
     text-align: center;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 .myButton {
@@ -90,6 +92,10 @@ padding:10px 30px;
 text-decoration: none;
 text-shadow:0px 1px 0px $charcoal;
 text-align: center;
+}
+
+.myButton:hover {
+color:$light-plum;
 }
 
 /* Form Styling */
@@ -117,13 +123,15 @@ text-align: center;
 /* Form Styling Ends */
 
 .splash-img {
+    display: block;
     height: auto;
     width: 90%;
-    margin-top: 4.7em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 %center-text {
-    margin: 1.5em 5em 1em 5em;
+    margin: 1.5em 6em 1em 6em;
     text-align: center;
 }
 
@@ -139,12 +147,12 @@ text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    margin: 0em 2em 0em 2em;
 }
 
 %contain-img {
     width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 .greeting-card {
@@ -155,6 +163,40 @@ text-align: center;
     @extend %contain-img;
 }
 
-.printable {
+.printable-img {
     @extend %contain-img;
+}
+
+.commissions-img {
+    @extend %contain-img;
+}
+
+.social-media-img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.commission-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.social-media-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+.commission-text {
+    margin: 6em 9em 0.75em 2em;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
 }

@@ -90,49 +90,60 @@
     <div class="commissions-section" id="commissions-menu-id">
         <hr>
         <h1>Commissions</h1>
-        <img class="commissions-img" src="images/splash-img.png" alt="An example of a commissioned art piece.">
-        <p>
-                While I focus primarily on my own artwork and commercial-use work-for-hire, I do occasionally take personal commissions too.
-                I almost always have chibi commissions available through my Etsy store, but when I open commissions in my more complex styles
-                my patrons will have first dibs.
-        </p>
-        <a href="#" class="myButton">Contact Me</a>
+        <div class="commission-container">
+            <img class="commissions-img" src="images/splash-img.png" alt="An example of a commissioned art piece.">
+            <div>
+            <p class="commission-text">
+                    While I focus primarily on my own artwork and commercial-use work-for-hire, I do occasionally take personal commissions too.
+                    I almost always have chibi commissions available through my Etsy store, but when I open commissions in my more complex styles
+                    my patrons will have first dibs.
+            </p>
+            <a href="#" class="myButton">Contact Me</a>
+        </div>
+        </div>
     </div>
 
     <div class="contact-section" id="contact-menu-id">
         <hr>
         <h1>Contact Me</h1>
+        <div class="social-media-container">
             <img class="social-media-img" src="http://via.placeholder.com/150x150" alt="A link to my social media page.">
             <img class="social-media-img" src="http://via.placeholder.com/150x150" alt="A link to my social media page.">
             <img class="social-media-img" src="http://via.placeholder.com/150x150" alt="A link to my social media page.">
             <img class="social-media-img" src="http://via.placeholder.com/150x150" alt="A link to my social media page.">
-        <h2 class="subsection-title">About the Artist</h2>
-            <img class="artist-img" src="images/artist-img.jpg" alt="A picture of the artist">
-            <p>
-                I'm an author, freelance illustrator, and all-around geek.
-                I've been drawing and telling stories since before I can remember, and I'm not always sure where to draw the line between them.
-                The stuff I make has always been eclectic, I love to learn and experiment with new methods and styles. I love cute things,
-                but I'm also inspired by Victorian fashion and high fantasy, as well as modern pop culture.
-                I like sticking things together in new ways, creating something new out of the juxtaposition.
-                While I love drawing almost anything, I specialize in fantasy illustration.
-            </p>
-        <h2 class="subsection-title">Get in Touch</h2>
-            <form class="contact-form">
-                <div class="form-item">
-                    <label  for="personname">Your Name*</label>
-                    <input type="text" name="personname" placeholder="Your Name Here..." required>
+        </div>
+        <div class="contact-container">
+            <div>
+                <h2 class="subsection-title">About the Artist</h2>
+                    <img class="artist-img" src="images/artist-img.jpg" alt="A picture of the artist">
+                    <p>
+                        I'm an author, freelance illustrator, and all-around geek.
+                        I've been drawing and telling stories since before I can remember, and I'm not always sure where to draw the line between them.
+                        The stuff I make has always been eclectic, I love to learn and experiment with new methods and styles. I love cute things,
+                        but I'm also inspired by Victorian fashion and high fantasy, as well as modern pop culture.
+                        I like sticking things together in new ways, creating something new out of the juxtaposition.
+                        While I love drawing almost anything, I specialize in fantasy illustration.
+                    </p>
+            </div>
+            <div>
+                <h2 class="subsection-title">Get in Touch</h2>
+                    <form class="contact-form">
+                        <div class="form-item">
+                            <label  for="personname">Your Name*</label>
+                            <input type="text" name="personname" placeholder="Your Name Here..." required>
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Your Email*</label>
+                            <input type="email" name="email" placeholder="Your Email Here..." required>
+                        </div>
+                        <div class="form-item">
+                            <label  for="message">Message</label>
+                            <textarea class="input-field" name="message" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                        <button type="submit" class="myButton">Submit</button>
+                    </form>
                 </div>
-                <div class="form-item">
-                    <label for="email">Your Email*</label>
-                    <input type="email" name="email" placeholder="Your Email Here..." required>
-                </div>
-                <div class="form-item">
-                    <label  for="message">Message</label>
-                    <textarea class="input-field" name="message" placeholder="Enter your comment here..."></textarea>
-                </div>
-                </div>
-                <button type="submit" class="myButton">Submit</button>
-            </form>
+        </div>
     </div>
 </div>
 </body>
